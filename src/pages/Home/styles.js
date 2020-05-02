@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   flex: 1;
+  padding-bottom: 100px;
 
   h1 {
     color: #f40c52;
