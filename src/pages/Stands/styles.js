@@ -5,89 +5,51 @@ export const Container = styled.div`
   padding-bottom: 100px;
 
   header {
-    display: flex;
     flex: 1;
-    height: 70px;
-    background: #89002c;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    background: #89002c;
+    height: 70px;
+    padding: 0 30px;
 
     span {
       color: #fff;
       font-size: 25px;
       margin-left: 30px;
+      font-weight: bold;
     }
-    svg {
-      margin-right: 30px;
+
+    a {
       color: #fff;
-    }
+      text-decoration: none;
+      font-size: 16px;
+      transition: opacity 0.2s;
+      padding-bottom: 10px;
+      font-weight: bold;
 
-    nav {
-      margin-right: 30px;
+      & + a {
+        margin-left: 32px;
+      }
 
-      a {
+      svg {
         color: #fff;
-        text-decoration: none;
-        font-size: 16px;
-        transition: opacity 0.2s;
-        padding-bottom: 10px;
-        font-weight: bold;
+      }
 
-        & + a {
-          margin-left: 32px;
-        }
-
-        &:hover {
-          border-bottom: 2px solid #f40c52;
-          opacity: 0.6;
-        }
+      &:hover {
+        border-bottom: 2px solid #f40c52;
+        opacity: 0.6;
       }
     }
   }
 `;
 
-export const Box = styled.section`
-  display: flex;
-  justify-content: center;
-
-  a {
-    border-radius: 15px;
-    text-decoration: none;
-    background: #f40c52;
-    padding: 2px;
-    padding-bottom: 20px;
-
-    &:hover {
-      background: #5e001e;
-      transition: color 0.5ms;
-    }
-
-    img {
-      border-radius: 15px 15px 0 0;
-      width: 900px;
-      /* height: 400px; */
-    }
-
-    div {
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-      margin-top: 20px;
-      justify-content: center;
-
-      h1 {
-        color: #fff;
-        font-size: 30px;
-        margin-right: 10px;
-        font-weight: bold;
-      }
-
-      p {
-        color: #f2f2f2;
-        font-size: 25px;
-      }
-    }
-  }
+export const Banner = styled.div`
+  margin: 20px auto;
+  height: 300px;
+  width: 70%;
+  border-radius: 10px;
+  background: #7159c1;
 `;
 
 export const EventList = styled.section`
