@@ -9,6 +9,7 @@ import Interna from "../pages/Interna";
 import Passados from "../pages/Passados";
 import Futuros from "../pages/Futuros";
 import Stands from "../pages/Stands";
+import Oficina from "../pages/Oficina";
 
 function Routes() {
   return (
@@ -20,6 +21,7 @@ function Routes() {
       <Route path="/passados" component={Passados} />
       <Route path="/futuros" component={Futuros} />
       <Route path="/stands" component={Stands} />
+      <Route path="/oficina" component={Oficina} />
     </Switch>
   );
 }

@@ -46,22 +46,52 @@ export const Container = styled.div`
 
 export const Banner = styled.div`
   margin: 20px auto;
-  height: 300px;
+  padding: 0 30px;
+  height: 400px;
   width: 70%;
   border-radius: 10px;
-  background: #7159c1;
+  background: rgba(141, 16, 56, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    padding: 5px 5px 10px 5px;
+    background: rgb(141, 16, 56);
+    border-radius: 10px;
+    text-decoration: none;
+
+    img {
+      border-radius: 10px;
+      width: 300px;
+      height: 170px;
+      transition: transform 0.5s;
+    }
+
+    p {
+      color: #f2f2f2;
+      font-size: 15px;
+      max-width: 300px;
+    }
+
+    &:hover {
+      transform: translateX(10px);
+      background: #f40c52;
+    }
+  }
+`;
+
+export const Title = styled.h1`
+  font-size: 30px;
+  font-weight: bold;
+  color: #8d1038;
+  text-align: center;
+  margin: 20px;
 `;
 
 export const EventList = styled.section`
   display: flex;
   justify-content: center;
-
-  img {
-    border-radius: 50%;
-    & + img {
-      margin-left: 30px;
-    }
-  }
 
   ul {
     display: flex;
@@ -87,7 +117,7 @@ export const Card = styled.div`
 
     &:hover {
       transform: translateX(5px);
-      background: #5e001e;
+      background: rgb(141, 16, 56);
       transition: color 0.7ms;
     }
   }
