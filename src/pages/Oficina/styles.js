@@ -65,7 +65,7 @@ export const Chat = styled.div`
 
   h1 {
     font-size: 20px;
-    color: #fff;
+    color: #f40c52;
     text-align: center;
   }
 
@@ -82,15 +82,21 @@ export const Chat = styled.div`
   }
 
   strong {
-    color: #000;
+    color: #f40c52;
   }
 
   img {
     border-radius: 50%;
     height: 30px;
     width: 30px;
+    transition: transform 0.5s;
+
     & + img {
-      margin-left: 10px;
+      margin-left: 8px;
+    }
+
+    &:hover {
+      transform: translateX(10px);
     }
   }
 `;
@@ -103,7 +109,6 @@ export const Message = styled.section`
   margin: 20px;
   padding: 10px;
   background: rgba(162, 57, 91, 0.9);
-  /* justify-content: flex-end; */
 
   img {
     border-radius: 50%;
@@ -145,9 +150,14 @@ export const Table = styled.section`
     border-radius: 50%;
     height: 40px;
     width: 40px;
+    transition: transform 0.5s;
 
     & + img {
       margin-left: 15px;
+    }
+
+    &:hover {
+      transform: translateX(10px);
     }
   }
 `;

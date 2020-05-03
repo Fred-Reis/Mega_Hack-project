@@ -28,6 +28,20 @@ export default function Cadastro() {
             // onChange={(e) => {
             //   setNewRepo(e.target.value);
             // }}
+            placeholder="Digite o Link do seu LinkedIn"
+          />
+          <input
+            // value={}
+            // onChange={(e) => {
+            //   setNewRepo(e.target.value);
+            // }}
+            placeholder="Digite o Link do seu Github"
+          />
+          <input
+            // value={}
+            // onChange={(e) => {
+            //   setNewRepo(e.target.value);
+            // }}
             placeholder="Digite sua senha"
           />
           <input

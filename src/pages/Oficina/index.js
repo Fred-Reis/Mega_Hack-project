@@ -126,7 +126,7 @@ function Oficina() {
           </Table>
         </div>
         <Chat>
-          <h1>Bate-papo</h1>
+          <h1>CHAT</h1>
           <div style={{ background: "#b9b9b9" }}>
             <strong>
               Clique sobre um ícone para ver o perfil ou iniciar um bate-papo{" "}
