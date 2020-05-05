@@ -1,22 +1,18 @@
 import React from "react";
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FiChevronLeft } from "react-icons/fi";
 
 import { Container, EventList } from "./styles";
 import desafiantes from "../../assets/desafiantes.png";
 
 export default function Interna() {
-  const { params } = useRouteMatch();
-
-  console.log(params);
-
   return (
     <Container>
       <header>
         <nav>
-          <Link to="/">
+          <Link to="/home">
             <FiChevronLeft size={16} />
-            Voltar
+            Home
           </Link>
         </nav>
         <span>@shawee/MEGA_HACK</span>

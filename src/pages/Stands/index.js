@@ -23,9 +23,9 @@ function Stands() {
     <Container>
       <header>
         <nav>
-          <Link to="/">
+          <Link to="/home">
             <FiChevronLeft size={16} />
-            Voltar
+            Home
           </Link>
         </nav>
         <span>@shawee/MEGA_HACK</span>

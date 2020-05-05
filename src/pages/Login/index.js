@@ -23,7 +23,7 @@ export default function Login() {
             // }}
             placeholder="Digite sua senha"
           />
-          <Link to="/" type="submit">
+          <Link to="/home" type="submit">
             Login
           </Link>
         </Form>

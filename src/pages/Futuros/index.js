@@ -14,7 +14,7 @@ export default function Interna() {
     <Container>
       <header>
         <nav>
-          <Link to="/">
+          <Link to="/home">
             <FiChevronLeft size={16} />
             Voltar
           </Link>
